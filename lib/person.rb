@@ -55,5 +55,8 @@ class Person
     end
   end
   
-  person1 = Person.new("John")
-  puts person1.name
+  person1 = Person.new("Alice")
+  person2 = Person.new("Bob")
+  puts person1.call_friend(person2)
+
+  puts person1.start_conversation(person2, "weather")
